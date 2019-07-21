@@ -1,0 +1,59 @@
+
+.nav-container{
+    max-width:1370px;
+}
+.navbar{
+    background-color:#343C4A;
+    height: 105px;
+}
+.navbar-brand{
+    font-family: Tw Cen MT;
+    font-size: 30px;
+    line-height: 33px;
+    color: #00D053;
+}
+.nav-rigth-col-row{
+justify-content: space-around;
+}
+.search-img{
+    width: 19px;
+    height: 19px;
+    margin-top: 10px;
+    margin-left:10px;
+}
+.user{
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    padding: 5px 0;
+}
+.user-name{
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.user-photo{
+    width:28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url("../../images/user-photo.png");
+    margin-left: 10px;
+}
+.col-search{
+    flex-shrink: 0;
+    width:19px;
+}
+.nav{
+    justify-content: flex-start;
+}
+.nav-item{
+    padding-right: 8px;
+}
+.nav-link{
+    font-family: Brandon Grotesque;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
