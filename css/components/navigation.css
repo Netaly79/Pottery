@@ -1,38 +1,55 @@
+:root{
+    --green-color:#00D053;
+    --main-color:#ffffff;
+    --back-grey:#343C4A;
 
+}
 .nav-container{
     max-width:1370px;
 }
 .navbar{
     background-color:#343C4A;
-    height: 105px;
+    align-items: center;
+}
+.column{
+    display: flex;
+    align-items: center;
+}
+.col-right{
+    justify-content: flex-end;
 }
 .navbar-brand{
     font-family: Tw Cen MT;
     font-size: 30px;
     line-height: 33px;
-    color: #00D053;
+    color: var(--green-color);
+}
+.navbar-brand:hover{
+    color:var(--main-color);
 }
 .nav-rigth-col-row{
-justify-content: space-around;
+    justify-content: space-between;
+    margin: 0;
 }
 .search-img{
     width: 19px;
     height: 19px;
-    margin-top: 10px;
     margin-left:10px;
 }
 .user{
-    display:flex;
+    display:none;
     justify-content: flex-end;
     flex-wrap: nowrap;
     flex-grow: 1;
-    padding: 5px 0;
+    padding: 25px 0;
+    align-items: center;
 }
 .user-name{
     font-size: 20px;
     line-height: 29px;
     font-weight: bold;
     color: #FFFFFF;
+    margin-bottom: 0;
 }
 .user-photo{
     width:28px;
@@ -41,12 +58,19 @@ justify-content: space-around;
     background-image: url("../../images/user-photo.png");
     margin-left: 10px;
 }
+.user-photo-sm{
+    width:20px;
+    height: 20px;
+    margin-left: 10px;
+}
 .col-search{
     flex-shrink: 0;
-    width:19px;
+    flex-basis: 50%;
+    padding: 0;
 }
 .nav{
     justify-content: flex-start;
+    display: none;
 }
 .nav-item{
     padding-right: 8px;
@@ -56,4 +80,38 @@ justify-content: space-around;
     font-size: 20px;
     line-height: 29px;
     color: #FFFFFF;
+}
+.nav-link:hover, .nav-item:hover,
+.dropdown-item:hover
+{
+    color:var(--green-color);
+    background-color: var(--back-grey);
+}
+.dropdown{
+    display:block;
+    text-align: right;
+}
+.dropdown-toggle{
+    padding: 6px;
+}
+@media (min-width: 768px) { 
+    .dropdown{
+        display: none;
+    }
+    .nav{
+        display: flex;
+    }
+    .user{
+        display: flex;
+    }
+    .search-img{
+        margin-left: 0;
+    }
+    .user-name{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .user-photo-sm{
+
+    }
 }
