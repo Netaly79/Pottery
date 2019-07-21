@@ -1,0 +1,40 @@
+@import url('components/base.css');
+@import url('components/grid.css');
+@import url('components/button.css');
+@import url('components/header.css');
+@import url('components/footer.css');
+@import url('components/card.css');
+@import url('components/navigation.css');
+@import url('components/form.css');
+@import url('components/section.css');
+@import url('components/table.css');
+@import url('components/contact.css');
+@import url('components/hero.css');
+@import url('components/social.css');
+@import url('style.css');
+@import url('components/icon-css/animation.css');
+@import url('components/icon-css/fontello-codes.css');
+@import url('components/icon-css/fontello-embedded.css');
+@import url('components/icon-css/fontello-ie7-codes.css');
+@import url('components/icon-css/fontello-ie7.css');
+@import url('components/icon-css/fontello.css');
+
+/* @font-face {
+    font-family: 'Wisdom Script';
+    src: url('../font/Wisdom-Script.woff2') format('woff2'),
+        url('../font/Wisdom-Script.woff') format('woff');
+    font-weight: normal;
+    font-style:italic;
+} */
+
+@font-face {
+    font-family: 'Arial MT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ArialMT'), url('../font/ARIALMT.ttf') format('ttf');
+    }
+  
+    
+
+
+    
