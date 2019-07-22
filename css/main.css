@@ -22,8 +22,7 @@
 
      @font-face {
         font-family: 'Brandon Grotesque',sans-serif;
-        src: local('brandon-reg'),
-             url('../fonts/BrandonGrotesque-Bold.woff') format('woff');
+        src: url('../fonts/BrandonGrotesque-Bold.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     } 
