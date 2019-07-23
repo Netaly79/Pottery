@@ -37,7 +37,7 @@
     margin-left:10px;
 }
 .user{
-    display:none;
+    display:flex;
     justify-content: flex-end;
     flex-wrap: nowrap;
     flex-grow: 1;
@@ -45,6 +45,7 @@
     align-items: center;
 }
 .user-name{
+    display: none;
     font-family: Brandon Grotesque;
     font-size: 20px;
     line-height: 29px;
@@ -73,9 +74,6 @@
     justify-content: flex-start;
     display: none;
 }
-.nav-item{
-    padding-right: 8px;
-}
 .nav-link{
     font-family: Brandon Grotesque;
     font-size: 20px;
@@ -95,6 +93,10 @@
 .dropdown-toggle{
     padding: 6px;
 }
+.uk-dropdown-nav > li > a:hover
+{
+    color:var(--green-color);
+}
 @media (min-width: 768px) { 
     .dropdown{
         display: none;
@@ -102,17 +104,34 @@
     .nav{
         display: flex;
     }
-    .user{
-        display: flex;
-    }
     .search-img{
         margin-left: 0;
     }
+    .nav-link{
+        font-size: 18px;
+        padding: 0.5rem;
+    }
+    .nav-item{
+        padding-right: 0px;
+    }
+    
+}
+@media (min-width: 992px) { 
     .user-name{
+        display: block;
         font-size: 16px;
         line-height: 20px;
     }
-    .user-photo-sm{
-
+    .nav-link{
+        font-size: 20px;
+        padding: 0.5rem;
+    }
+}
+@media (min-width: 1200px) { 
+    .nav-link{
+        padding: 0.5rem 1rem;
+    }
+    .nav-item{
+        padding-right: 8px;
     }
 }
