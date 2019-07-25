@@ -133,7 +133,7 @@
     .nav-item{
         padding-right: 0px;
     }
-    .dropdown-menu-button,
+.dropdown-menu-button,
 .dropdown-menu-button:focus{
     color:var(--main-color);
     padding: 0 30px;

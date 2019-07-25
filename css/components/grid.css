@@ -2,7 +2,9 @@
     margin:0 ;
     width: 100%; 
 }
-
+.big-container{
+    max-width:1440px;
+}
 
 @media (min-width: 768px) { 
     
