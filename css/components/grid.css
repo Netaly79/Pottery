@@ -4,8 +4,37 @@
 }
 .big-container{
     max-width:1440px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.small-container{
+    max-width: 922px;
+    margin-bottom: 120px;
+}
+.medium-container{
+    max-width:1120px;
+    margin-bottom: 40px;
+    padding: 20px;
+    margin-top:-80px;
+}
+figure{
+    background-color: #343C4A;
 }
 
-@media (min-width: 768px) { 
-    
+
+@media (min-width: 480px) { 
+    .big-container{
+        margin-bottom: 50px;
+    }
+    .small-container{
+        margin-bottom: 50px;
+    }
+}
+@media (min-width: 640px) { 
+    .big-container{
+        margin-bottom: 120px;
+    }
+    .small-container{
+        margin-bottom: 120px;
+    }
 }

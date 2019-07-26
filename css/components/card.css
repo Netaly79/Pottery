@@ -1,0 +1,79 @@
+.singolo-card{
+    margin:0 auto;
+    padding:20px;
+    background-color: white;
+    width: 90%;
+    max-width: 546px;
+}
+.plan-card{
+    box-shadow: 0px 4px 28px rgba(6, 6, 90, 0.06);
+    border-radius: 5px;
+    width:100%;
+    margin-bottom: 30px;
+    padding: 46px 20px;
+}
+.card-title{
+font-family: Brandon Grotesque;
+font-size: 28px;
+line-height: 40px;
+text-align: center;
+font-weight: bold;
+color: #333333;
+}
+.card-subtitle{
+    font-family: Brandon Grotesque;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #333333;
+}
+.price{
+    font-family: Brandon Grotesque;
+    font-size: 50px;
+    line-height: 71px;
+    font-weight: bold;
+    text-align: center;
+    color: #333333;
+}
+.card-list{
+    padding-left: 0;
+}
+.card-list li{
+    list-style: none;
+    font-family: Brandon Grotesque;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #343C4A;
+}
+.card-desc{
+    font-family: Brandon Grotesque;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color:var(--section-title-color);
+}
+.gal-img{
+    width:100%;
+    object-fit: cover;
+}
+@media (min-width: 480px) { 
+    .singolo-card{
+        padding:37px;
+    }
+}
+@media (min-width: 640px) { 
+    .singolo-card{
+        padding:58px 37px;
+    }
+    .card-list li{
+        text-align: left;}
+}
+@media (min-width: 960px) { 
+    .singolo-card{
+        max-width: 546px; 
+    }
+    .card-list li{
+        text-align: center;
+}
+}

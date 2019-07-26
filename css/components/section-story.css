@@ -1,0 +1,13 @@
+.section-our-story{
+    background-color: var(--section-story-background);
+}
+.story-img {
+    max-height: 105px;
+    margin-bottom: 44px;
+}
+@media (min-width:960px){
+    .section-our-story{
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+}

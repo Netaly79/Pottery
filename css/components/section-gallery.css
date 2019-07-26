@@ -1,0 +1,29 @@
+.gallery-overlay{
+    background-color: rgba(52, 60, 74, 0.6);
+    z-index: -2;
+}
+.gallery-icon{
+    display:none;
+    width:64px;
+    height:64px;
+    border-radius: 50%;
+    color:white;
+    padding: 21px;
+    background-color: var(--green-color);
+}
+.gallery-card:hover .gallery-overlay{
+    z-index: 0;
+}
+.gallery-card:hover .gallery-icon{
+    display: block;
+}
+.gal-col{
+    margin:0;
+    padding: 0;
+}
+.uk-grid > .uk-grid-margin{
+    margin:0;
+}
+.gallery-grid{
+    margin: 0;
+}
