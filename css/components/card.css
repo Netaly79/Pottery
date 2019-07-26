@@ -57,6 +57,50 @@ color: #333333;
     width:100%;
     object-fit: cover;
 }
+.customer-card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 28px rgba(6, 6, 90, 0.06);
+    margin-bottom:150px;
+}
+.customer-photo{
+    width:50px;
+    height: 50px;
+    margin: 0 auto;
+}
+.personal-card-title{
+    font-family: Brandon Grotesque;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333 !important;
+}
+.city{
+    font-family: Brandon Grotesque;
+    font-size: 14px;
+    line-height: 139.2%;
+    text-align: center;
+    color: #828282;
+}
+.stars{
+    width:111px;
+    height:19px;
+    margin:0 auto;
+}
+.review-text{
+    font-family: Brandon Grotesque;
+font-size: 16px;
+line-height: 139.2%;
+text-align: center;
+color: #333333;
+}
+.date{
+    font-family: Brandon Grotesque;
+font-size: 12px;
+line-height: 139.2%;
+text-align: center;
+text-transform: uppercase;
+color: #B4B4B4;
+}
 @media (min-width: 480px) { 
     .singolo-card{
         padding:37px;

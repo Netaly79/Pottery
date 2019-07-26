@@ -21,3 +21,16 @@
     text-align: center;
     color:var(--section-title-color);
 }
+.slider-items{
+    min-height: 280px !important;
+}
+@media (min-width: 430px) { 
+    .slider-items{
+        min-height: 250px !important;
+    }
+}
+@media (min-width: 640px) { 
+    .slider-items{
+        min-height: 320px !important;
+    }
+}
