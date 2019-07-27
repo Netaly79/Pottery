@@ -12,6 +12,8 @@
 }
 .player-panel{
     padding: 20px;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 .preview-img{
     width:100%;
