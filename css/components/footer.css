@@ -15,22 +15,22 @@
     font-size: 30px;
     line-height: 43px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--main-color);
 }
 .f-label{
     font-family: Brandon Grotesque;
     font-size: 14px;
     line-height: 20px;
-    color: #F8F8F8;
+    color: var(--section-story-background);
 }
 .f-input{
-padding: 25px;
-font-family: Brandon Grotesque;
-font-size: 18px;
-line-height: 26px;
-color: #373F55;
-background: #FFFFFF;
-border-radius: 5px;
+    padding: 25px;
+    font-family: Brandon Grotesque;
+    font-size: 18px;
+    line-height: 26px;
+    color: #373F55;
+    background: var(--main-color);
+    border-radius: 5px;
 }
 .f-button{
     margin-top:22px !important;

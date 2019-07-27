@@ -22,16 +22,19 @@
     color:var(--section-title-color);
 }
 .slider-items{
-    min-height: 280px !important;
+    min-height: 320px !important;
+}
+.plan-col {
+    padding-left: 0px !important;
 }
 @media (min-width: 430px) { 
     .slider-items{
-        min-height: 250px !important;
+        min-height: 300px !important;
     }
 }
 @media (min-width: 640px) { 
     .slider-items{
-        min-height: 320px !important;
+        min-height: 400px !important;
     }
 }
 @media (min-width: 1440px) { 

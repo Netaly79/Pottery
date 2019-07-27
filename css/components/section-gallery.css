@@ -7,7 +7,7 @@
     width:64px;
     height:64px;
     border-radius: 50%;
-    color:white;
+    color:var(--main-color);
     padding: 21px;
     background-color: var(--green-color);
 }

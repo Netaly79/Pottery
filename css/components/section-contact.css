@@ -1,16 +1,25 @@
+.section-contacts{
+    padding-top: 20px;
+}
 .contact-title{
     font-family: Brandon Grotesque;
     font-size: 28px;
     line-height: 40px;
     text-align: center;
-    color: #333333;
+    color: var(--section-title-color);
     font-weight: bold;
     width: 100%;
     text-align: left;
+    margin-top: 10px;
 }
 .contact-col{
-    flex-direction: column;
-    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 ul{
     padding: 0;

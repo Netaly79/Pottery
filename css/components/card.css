@@ -1,12 +1,13 @@
 .singolo-card{
     margin:0 auto;
     padding:20px;
-    background-color: white;
+    background-color: var(--main-color);
     width: 90%;
     max-width: 546px;
 }
 .plan-card{
-    box-shadow: 0px 4px 28px rgba(6, 6, 90, 0.06);
+    -webkit-box-shadow: 0px 4px 28px rgba(6, 6, 90, 0.06);
+            box-shadow: 0px 4px 28px rgba(6, 6, 90, 0.06);
     border-radius: 5px;
     width:100%;
     margin-bottom: 30px;
@@ -14,19 +15,19 @@
     height: 100%;
 }
 .card-title{
-font-family: Brandon Grotesque;
-font-size: 28px;
-line-height: 40px;
-text-align: center;
-font-weight: bold;
-color: #333333;
+    font-family: Brandon Grotesque;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--section-title-color);
 }
 .card-subtitle{
     font-family: Brandon Grotesque;
     font-size: 20px;
     line-height: 29px;
     text-align: center;
-    color: #333333;
+    color: var(--section-title-color);
 }
 .price{
     font-family: Brandon Grotesque;
@@ -34,7 +35,7 @@ color: #333333;
     line-height: 71px;
     font-weight: bold;
     text-align: center;
-    color: #333333;
+    color: var(--section-title-color);
 }
 .card-list{
     padding-left: 0;
@@ -45,7 +46,7 @@ color: #333333;
     font-size: 18px;
     line-height: 26px;
     text-align: center;
-    color: #343C4A;
+    color: var(--back-grey);
 }
 .card-desc{
     font-family: Brandon Grotesque;
@@ -56,11 +57,13 @@ color: #333333;
 }
 .gal-img{
     width:100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .customer-card{
     background: #FFFFFF;
-    box-shadow: 0px 4px 28px rgba(6, 6, 90, 0.06);
+    -webkit-box-shadow: 0px 4px 28px rgba(6, 6, 90, 0.06);
+            box-shadow: 0px 4px 28px rgba(6, 6, 90, 0.06);
     margin-bottom:150px;
     padding: 20px;
 }
@@ -74,7 +77,7 @@ color: #333333;
     font-size: 18px;
     line-height: 26px;
     text-align: center;
-    color: #333333 !important;
+    color: var(--section-title-color) !important;
 }
 .city{
     font-family: Brandon Grotesque;
@@ -90,27 +93,37 @@ color: #333333;
 }
 .review-text{
     font-family: Brandon Grotesque;
-font-size: 16px;
-line-height: 139.2%;
-text-align: center;
-color: #333333;
+    font-size: 16px;
+    line-height: 139.2%;
+    text-align: center;
+    color: var(--section-title-color);
 }
 .date{
     font-family: Brandon Grotesque;
-font-size: 12px;
-line-height: 139.2%;
-text-align: center;
-text-transform: uppercase;
-color: #B4B4B4;
+    font-size: 12px;
+    line-height: 139.2%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--border-color);
 }
 .card-body{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
 }
 .card-footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 @media (min-width: 480px) { 
     .singolo-card{
@@ -130,19 +143,18 @@ color: #B4B4B4;
     }
     .card-list li{
         text-align: center;
-}
+    }
 }
 @media (min-width: 960px) { 
-
-.card-list{
-    margin: 0;
-}
-.card-list li{
-    margin-bottom: 15px;
-}
+    .card-list{
+        margin: 0;
+    }
+    .card-list li{
+        margin-bottom: 15px;
+    }
 }
 @media (min-width: 1440px) { 
     .plan-button{
         margin:20px 10px !important;
     }
-    }
+}

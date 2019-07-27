@@ -40,12 +40,14 @@
                                 Menu
                             </button>
                             <div class="uk-nav uk-dropdown-nav" uk-dropdown="mode: click">
-                                <li><a class="dropdown-item" href="#">Techniques</a></li>
-                                <li><a class="dropdown-item" href="#">About us</a></li>
-                                <li><a class="dropdown-item" href="#">Gallery</a></li>
-                                <li><a class="dropdown-item" href="#">Plans</a></li>
-                                <li><a class="dropdown-item" href="#">Reviews</a></li>
-                                <li><a class="dropdown-item" href="#">Contacts</a></li>
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Techniques</a></li>
+                                    <li><a class="dropdown-item" href="#">About us</a></li>
+                                    <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="#">Plans</a></li>
+                                    <li><a class="dropdown-item" href="#">Reviews</a></li>
+                                    <li><a class="dropdown-item" href="#">Contacts</a></li>
+                                </ul>
                             </div>
                     </div>
                 </div>
@@ -100,13 +102,13 @@
                                     <div class="uk-form-controls">
                                         <input class="uk-input form-input" id="form-stacked-text" type="text" placeholder="">
                                     </div>
-                                    <label class="uk-form-label form-label" for="form-stacked-text">Your email</label>
+                                    <label class="uk-form-label form-label" for="form-stacked-email">Your email</label>
                                     <div class="uk-form-controls">
-                                        <input class="uk-input form-input" id="form-stacked-text" type="email" placeholder="">
+                                        <input class="uk-input form-input" id="form-stacked-email" type="email" placeholder="">
                                     </div>
-                                    <label class="uk-form-label form-label" for="form-stacked-text">Choose a day</label>
+                                    <label class="uk-form-label form-label" for="form-stacked-date">Choose a day</label>
                                     <div class="uk-form-controls">
-                                        <input class="uk-input calendar form-input" id="form-stacked-text" type="text" placeholder="">
+                                        <input class="uk-input calendar form-input" id="form-stacked-date" type="text" placeholder="">
                                         <div  class="my-form-icon" uk-icon="icon: calendar"></div>
                                     </div>
                                 </div>
@@ -117,14 +119,14 @@
                 </div>
         </div>
         <section class="section section-techniques">
-            <div class="container small-container">
+            <div class="container small-container tech-container">
                 <h2 class="section-title">Techniques you will learn</h2>
                 <p class="section-desc">Choose and watch the video below in order to find out more about 
                     the techniques you will learn at your lessons.
                 </p>
                 <figure>
                     <img  class="stop-video" src="images/357d5d_67d0cce510744006898903ee5acdca60.png" alt="video">
-                    <img class="player-panel" src="images/player progress bar.png" alt="player">
+                    <img class="player-panel" src="images/player-progress-bar.png" alt="player">
                 </figure>
                 <p class="section-sub-desc">Wheelthrowing</p>
                 <div class="uk-child-width-expand" uk-grid>
@@ -140,7 +142,7 @@
                     </div>
                     <div class=" column uk-width-1-4 uk-column-1-4@m">
                         <div class="uk-card">
-                            <img class="preview-img" src="images/Group 3.png" alt="hands">
+                            <img class="preview-img" src="images/Group3.png" alt="hands">
                         </div>
                     </div>
                     <div class="column uk-width-1-4 uk-column-1-4@m">
@@ -255,7 +257,7 @@
                 <p class="section-desc">Choose your plan and let’s make beauty together. Our classes are taught by top practitioners.
                 </p>
                 <div class="uk-child-width-expand gallery-grid .uk-responsive-height" uk-grid>
-                    <div class="column  uk-width-1-3@s plan-col">
+                    <div class="column  uk-width-1-3@m plan-col">
                         <div class="uk-card plan-card">
                             <div class="card-body">
                             <h4 class="card-title">Basic</h4>
@@ -277,7 +279,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column  uk-width-1-3@s plan-col">
+                    <div class="column  uk-width-1-3@m plan-col">
                         <div class="uk-card plan-card">
                             <div class="card-body">
                             <h4 class="card-title">Standart</h4>
@@ -299,7 +301,7 @@
                         </div>
                         </div>
                     </div>
-                    <div class="column  uk-width-1-3@s plan-col">
+                    <div class="column  uk-width-1-3@m plan-col">
                             <div class="uk-card plan-card">
                                 <div class="card-body">
                                 <h4 class="card-title">Premium</h4>
@@ -531,7 +533,7 @@
                 <div class="uk-child-width-expand" uk-grid>
                     <div class="column uk-width-2-3@s uk-width-3-4@m map-col">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d193514.97606023017!2d-73.99931106438578!3d40.726092827730355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s2901+Bedford+Avenue+Brooklyn%2C+NY+11210+P%3A+718.951.5000!5e0!3m2!1sru!2sua!4v1564212798771!5m2!1sru!2sua" 
-                            max-width="890" max-height="364" width="100%" height="100%" object-fit="cover" frameborder="0" style="border:0" allowfullscreen></iframe>
+                             width="100%" height="100%" object-fit="cover" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                     <div class="column uk-width-1-3@s uk-width-1-4@m contact-col">
                         <h4 class="contact-title">Our office:</h4>

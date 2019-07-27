@@ -6,7 +6,8 @@
     max-width:1440px;
     height: 650px;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .banner-overlay{
     background: rgba(52, 60, 74, 0.39);
@@ -18,7 +19,9 @@
     width:80%;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);  
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);  
 }
 .banner-info{
     margin-left: -40px;
@@ -29,61 +32,60 @@
     font-size: 40px;
     line-height: 44px;
     font-weight: bold;
-    color: #FFFFFF;
-
+    color: var(--main-color);
 }
-
 .form-column{
-    justify-content: center;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 28px rgba(6, 6, 90, 0.06);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: var(--main-color);
+    -webkit-box-shadow: 0px 4px 28px rgba(6, 6, 90, 0.06);
+            box-shadow: 0px 4px 28px rgba(6, 6, 90, 0.06);
     border-radius: 5px;
     padding: 46px 0px;
     max-height: 100%;
-    border: 1px dotted #B4B4B4;
+    border: 1px dotted var(--border-color);
 }
-
 .banner-desc{
     font-family: Brandon Grotesque;
     font-size: 18px;
     line-height: 26px;
-    color: #F5F5F5;
+    color: var(--banner-text);
 }
-
 .my-button{
     font-family: Brandon Grotesque;
     font-size: 16px;
     line-height: 23px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
-    background: #00D053;
+    color: var(--main-color);
+    background: var(--green-color);
     border-radius: 5px;
     padding: 14px;
     margin:20px 0;
 }
 .my-button:hover, .my-button-inverse{
-    background: #FFFFFF;
-    color: #00D053;
+    background: var(--main-color);
+    color: var(--green-color);
 }
 .my-button-inverse{
     width:100%;
 }
 .my-button-inverse:hover{
-    color: #FFFFFF;
-    background: #00D053;
+    color: var(--main-color);
+    background: var(--green-color);
 }
 .form-title{
     font-family: Brandon Grotesque;
     font-size: 28px;
     line-height: 38px;
     text-align: center;
-    color: #333333;
+    color: var(--section-title-color);
 }
 .form-label{
     font-size: 14px;
     line-height: 20px;
-    color: #B4B4B4;
+    color: var(--border-color);
 }
 .my-form-icon{
     margin-left: 85%;
@@ -98,7 +100,6 @@
     margin-bottom: 10px;
 }
 @media (min-width:640px){
-   
     .my-button{
         font-size: 16px;
         line-height: 18px;
@@ -117,8 +118,7 @@
         padding:46px 28px;
     }
 }
-@media (min-width:960px){
-    
+@media (min-width:960px){ 
     .banner-info{
         padding-right: 120px;
     }
@@ -160,12 +160,15 @@
         line-height: 88px;
         padding-top: 40px;
         margin-bottom: 10px;
-    
     }
     .form-column{
         width:356px;
-        align-items:flex-start;
-        justify-content: flex-start;
+        -webkit-box-align:start;
+            -ms-flex-align:start;
+                align-items:flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         padding:46px 38px;
     }
     .form-title{

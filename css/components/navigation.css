@@ -1,22 +1,28 @@
 
 .nav-container{
     max-width:1440px;
-    
 }
 .uk-navbar-container:not(.uk-navbar-transparent){
     background-color: var(--back-grey);
 }
 .navbar{
     background-color:#343C4A;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .column{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .col-right{
-    justify-content: flex-start;
-    
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 .logo{
     font-family: Tw Cen MT;
@@ -27,23 +33,28 @@
 .logo:hover{
     color:var(--main-color);
 }
-
 .dropdown-menu-button,
 .dropdown-menu-button:focus{
     color:var(--main-color);
     padding: 5px;
 }
-
 .search-img{
     width: 19px;
     height: 19px;
 }
 .user{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
-    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     padding: 25px 0;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .user-name{
     display: none;
@@ -70,15 +81,17 @@
 }
 .col-search{
     justify-items: center;
-    align-items: center;
-    padding: 0;
-    
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0; 
 }
 .nav{
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     display: none;
-    margin-bottom: 0;
-    
+    margin-bottom: 0;  
 }
 .nav-link{
     font-family: Brandon Grotesque;
@@ -109,12 +122,13 @@
 {
     color:var(--green-color);
 }
-
 @media (min-width: 640px) { 
     .dropdown{
         display: none;
     }
     .nav{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding: 0;
     }
@@ -128,15 +142,15 @@
     .nav-item{
         padding-right: 0px;
     }
-.dropdown-menu-button,
-.dropdown-menu-button:focus{
-    color:var(--main-color);
-    padding: 0 30px;
-}
-.logo{
-    font-size: 22px;
-    padding: 0;
-}
+    .dropdown-menu-button,
+    .dropdown-menu-button:focus{
+        color:var(--main-color);
+        padding: 0 30px;
+    }
+    .logo{
+        font-size: 22px;
+        padding: 0;
+    }   
 }
 @media (min-width: 960px) { 
     .user-name{
@@ -148,10 +162,8 @@
         font-size: 20px;
         padding: 0.5rem;
     }
-   
 }
 @media (min-width: 1200px) { 
-    
     .nav-link{
         padding: 0.5rem 1rem;
     }
