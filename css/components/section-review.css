@@ -1,0 +1,15 @@
+.section-review{
+    background-color: #F8F8F8;;
+}
+.uk-dotnav > .uk-active > * {
+    background-color: var(--green-color);
+    border-color: transparent;
+}
+@media (min-width: 1440px) { 
+    .section-title{
+        margin-top:100px;
+        margin-bottom: 0px;
+    }
+    .section-review{
+        padding-bottom: 20px;}
+}

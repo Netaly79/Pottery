@@ -1,0 +1,53 @@
+.footer-container{
+    background-image: url("../../images/footer.png");
+    padding: 70px 20px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+}
+.subscribe{
+    margin: 0 auto;
+    width:90%;
+    padding: 20px;
+}
+.f-title{
+    font-family: Brandon Grotesque;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.f-label{
+    font-family: Brandon Grotesque;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F8F8F8;
+}
+.f-input{
+padding: 25px;
+font-family: Brandon Grotesque;
+font-size: 18px;
+line-height: 26px;
+color: #373F55;
+background: #FFFFFF;
+border-radius: 5px;
+}
+.f-button{
+    margin-top:22px !important;
+}
+.social{
+    margin-top: 50px;
+    text-align: center;
+}
+.social a{
+    color:white;
+    padding: 0 20px;
+}
+.social a:hover{
+    color:var(--green-color);
+}
+@media (min-width: 640px) { 
+    .footer-container{
+        padding: 30px 20px;
+    }
+}

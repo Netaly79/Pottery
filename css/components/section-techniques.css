@@ -35,3 +35,8 @@
         height: 118px;
     }
 }
+@media (min-width:1440px){
+    figure{
+        margin-bottom: 35px;
+    }
+}

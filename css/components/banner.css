@@ -120,7 +120,7 @@
 @media (min-width:960px){
     
     .banner-info{
-        padding-right: 140px;
+        padding-right: 120px;
     }
     .banner-header{
         font-size: 60px;
@@ -158,6 +158,9 @@
     .banner-header{
         font-size: 80px;
         line-height: 88px;
+        padding-top: 40px;
+        margin-bottom: 10px;
+    
     }
     .form-column{
         width:356px;
@@ -166,5 +169,11 @@
         padding:46px 38px;
     }
     .form-title{
-        padding-left: 20px;}
+        padding-left: 20px;
+    }
+    .my-button{
+        margin-top:40px;
+        padding-left: 75px;
+        padding-right: 75px;
+    }
 }

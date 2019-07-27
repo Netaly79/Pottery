@@ -27,3 +27,11 @@
 .gallery-grid{
     margin: 0;
 }
+@media (min-width: 1440px) { 
+    .title-gallery{
+        margin-top: 60px;
+    }
+    .plan-col{
+        padding:0 10px;
+    }
+}

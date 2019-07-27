@@ -1,0 +1,47 @@
+.contact-title{
+    font-family: Brandon Grotesque;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    color: #333333;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+}
+.contact-col{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+ul{
+    padding: 0;
+}
+.contacts li{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.phone{
+    list-style-image: url("../../images/007-telephone.svg");
+}
+.mail{
+    list-style-image: url("../../images/005-mail-black-envelope-symbol.svg");
+}
+.adress{
+    list-style-image: url("../../images/008-facebook-placeholder-for-locate-places-on-maps.svg");
+}
+.shed{
+    list-style-image: url("../../images/006-calendar.svg");
+}
+@media (min-width: 1440px) { 
+    .s-contact-title{
+        margin-bottom: 40px !important;
+    }
+    .section-plans{
+        margin-bottom: 80px;
+    }
+    .map-col{
+        width:890px;
+    }
+    .contact-col{
+        width:203px;
+    }
+}

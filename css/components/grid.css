@@ -13,7 +13,7 @@
 }
 .medium-container{
     max-width:1120px;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
     padding: 20px;
     margin-top:-80px;
 }
@@ -36,5 +36,20 @@ figure{
     }
     .small-container{
         margin-bottom: 120px;
+    }
+    .medium-container{
+        margin-bottom: 120px;
+    }
+}
+@media (min-width: 1440px) { 
+    .big-container{
+        margin-bottom: 100px;
+    }
+    .small-container{
+        margin-bottom: 120px;
+    }
+    .medium-container{
+        margin-bottom: 120px;
+        margin-top:-20px;
     }
 }

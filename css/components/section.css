@@ -34,3 +34,11 @@
         min-height: 320px !important;
     }
 }
+@media (min-width: 1440px) { 
+    .section-title{
+        margin-bottom: 0px;
+    }
+    .section-plans{
+        margin-bottom: 80px;
+    }
+}

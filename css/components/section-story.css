@@ -11,3 +11,21 @@
         padding-bottom: 20px;
     }
 }
+@media (min-width:1440px){
+    .section-our-story{
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+    .story-desc{
+        width: 792px;
+       margin: 0 auto;
+       padding: 10px 0;
+       margin-bottom: 45px;
+    }
+    .story-img{
+        padding: 0 50px;
+    }
+    .story-container{
+        margin-bottom: 120px;
+    }
+}
