@@ -22,24 +22,39 @@
     color:var(--section-title-color);
 }
 .slider-items{
-    min-height: 320px !important;
+    min-height: 400px !important;
 }
 .plan-col {
     padding-left: 0px !important;
 }
-@media (min-width: 430px) { 
+@media (min-width: 350px) { 
     .slider-items{
-        min-height: 300px !important;
+        min-height: 380px !important;
+    }
+}
+@media (min-width: 440px) { 
+    .slider-items{
+        min-height: 350px !important;
     }
 }
 @media (min-width: 640px) { 
     .slider-items{
+        min-height: 390px !important;
+    }
+}
+@media (min-width: 730px) { 
+    .slider-items{
+        min-height: 390px !important;
+    }
+}
+@media (min-width: 880px) { 
+    .slider-items{
         min-height: 370px !important;
     }
 }
-@media (min-width: 740px) { 
+@media (min-width: 960px) { 
     .slider-items{
-        min-height: 350px !important;
+        min-height: 420px !important;
     }
 }
 @media (min-width: 1440px) { 
