@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/uikit/uikit.min.css" />
     <link rel="stylesheet" href="css/main.css">
     <title>Pottery</title>
   </head>
   <body>
-      <header>
+      <header class="header">
         <div class="container uk-navbar-container nav-container">
             <div class="row uk-grid  uk-grid-small">
                 <div class=" column uk-width-1-2 uk-width-1-6@s uk-width-1-5@l">
@@ -76,9 +77,9 @@
         </div> 
       </header>
       <main>
-        <div class="container big-container banner-container uk-inline">
-                <img  class="banner-image" src="images/img.png" alt="pottery">
-                <div class="uk-overlay-primary uk-position-cover banner-overlay"></div>
+        <section class="section-banner">
+            <img  class="banner-image" src="images/img.png" alt="pottery">
+            <div class="uk-overlay-primary uk-position-cover banner-overlay"></div>
                 <div class="banner-content">
                     <div class="row uk-grid">
                         <div class="column uk-width-3-5@s uk-width-2-3@m">
@@ -95,7 +96,7 @@
                         </div>
                         <div class="column uk-width-2-5@s uk-width-1-3@m form-column">
                             <form class="bonus-form">
-                                <h3 class="form-title">Try unlimited one-day <br>
+                                <h3 class="form-title">Try unlimited one-day
                                         clay - only $50</h3>
                                 <div class="form-body">
                                     <label class="uk-form-label form-label" for="form-stacked-text">Your name</label>
@@ -107,9 +108,8 @@
                                         <input class="uk-input form-input" id="form-stacked-email" type="email" placeholder="">
                                     </div>
                                     <label class="uk-form-label form-label" for="form-stacked-date">Choose a day</label>
-                                    <div class="uk-form-controls">
+                                    <div class="uk-form-controls calendar-box">
                                         <input class="uk-input calendar form-input" id="form-stacked-date" type="text" placeholder="">
-                                        <div  class="my-form-icon" uk-icon="icon: calendar"></div>
                                     </div>
                                 </div>
                                 <button class="uk-button uk-button-default my-button my-button-inverse">Try it</button>
@@ -117,7 +117,28 @@
                         </div>
                     </div>
                 </div>
-        </div>
+        </section>
+        <section class="section section-bonus">
+            <form class="small-bonus-form">
+                <h3 class="form-title">Try unlimited one-day
+                        clay - only $50</h3>
+                <div class="form-body">
+                    <label class="uk-form-label form-label" for="form-stacked-text">Your name</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input form-input" id="form-stacked-text" type="text" placeholder="">
+                    </div>
+                    <label class="uk-form-label form-label" for="form-stacked-email">Your email</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input form-input" id="form-stacked-email" type="email" placeholder="">
+                    </div>
+                    <label class="uk-form-label form-label" for="form-stacked-date">Choose a day</label>
+                    <div class="uk-form-controls calendar-box">
+                        <input class="uk-input calendar form-input" id="form-stacked-date" type="text" placeholder="">
+                    </div>
+                </div>
+                <button class="uk-button uk-button-default my-button my-button-inverse">Try it</button>
+            </form>    
+        </section>
         <section class="section section-techniques">
             <div class="container small-container tech-container">
                 <h2 class="section-title">Techniques you will learn</h2>
@@ -129,7 +150,7 @@
                     <img class="player-panel" src="images/player-progress-bar.png" alt="player">
                 </figure>
                 <p class="section-sub-desc">Wheelthrowing</p>
-                <div class="uk-child-width-expand" uk-grid>
+                <div class="uk-child-width-expand tech-grid" uk-grid>
                     <div class="column uk-width-1-4 uk-column-1-4@m">
                         <div class="uk-card">
                             <img  class="preview-img" src="images/357d5d_67d0cce510744006898903ee5acdca60.png" alt="man">
@@ -181,7 +202,8 @@
                                 <img  class="gal-img" src="images/gal-1.png" alt="gal1">
                                 <div class="uk-overlay-default uk-position-cover gallery-overlay"></div>
                                 <div class="uk-position-center">
-                                    <span class="gallery-icon"  uk-icon="icon: search"></span>  
+                                    <a data-fancybox="gallery" href="images/gal-1b.png">
+                                    <span class="gallery-icon"  uk-icon="icon: search"></span>   </a>
                                 </div>
                             </div>
                         </div>
@@ -190,7 +212,8 @@
                                 <img  class="gal-img" src="images/gal-2.png" alt="gal2">
                                 <div class="uk-overlay-default uk-position-cover gallery-overlay"></div>
                                 <div class="uk-position-center">
-                                    <span class="gallery-icon"  uk-icon="icon: search"></span>  
+                                        <a data-fancybox="gallery" href="images/gal-2b.png">
+                                            <span class="gallery-icon"  uk-icon="icon: search"></span>   </a>
                                 </div>
                             </div>
                         </div>
@@ -335,8 +358,8 @@
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
                         <ul class="uk-slideshow-items slider-items">
                             <li>
-                                <div class="uk-child-width-expand gallery-grid" uk-grid>
-                                    <div class="column  uk-width-1-3@s review-col">
+                                <div class="uk-child-width-expand gallery-grid .uk-responsive-height" uk-grid>
+                                    <div class="column  uk-width-1-2@s uk-width-1-3@m review-col">
                                         <div class="uk-card customer-card">
                                             <img class="customer-photo" src="images/p1.png" alt="p1">
                                             <h4 class="personal-card-title">Angela Mortensen</h4>
@@ -347,7 +370,7 @@
                                             <p class="date">01 may 2019</p>
                                         </div>
                                     </div>
-                                    <div class="column  uk-width-1-3@s review-col">
+                                    <div class="column  uk-width-1-2@s uk-width-1-3@m review-col">
                                         <div class="uk-card customer-card">
                                             <img class="customer-photo" src="images/p2.png" alt="p2">
                                             <h4 class="personal-card-title">Dilan Mason</h4>
@@ -358,7 +381,7 @@
                                             <p class="date">20 apr 2019</p>
                                         </div>
                                     </div>
-                                    <div class="column  uk-width-1-3@s review-col">
+                                    <div class="column  uk-width-1-2@s uk-width-1-3@m review-col">
                                         <div class="uk-card customer-card">
                                             <img class="customer-photo" src="images/p3.png" alt="p3">
                                             <h4 class="personal-card-title">Amanda Berkley</h4>
@@ -373,7 +396,7 @@
                             </li>
                             <li>
                                 <div class="uk-child-width-expand gallery-grid" uk-grid>
-                                    <div class="column  uk-width-1-3@s review-col">
+                                    <div class="column  uk-width-1-2@s uk-width-1-3@m  review-col">
                                         <div class="uk-card customer-card">
                                             <img class="customer-photo" src="images/p2.png" alt="p2">
                                             <h4 class="personal-card-title">Dilan Mason</h4>
@@ -384,7 +407,7 @@
                                             <p class="date">20 apr 2019</p>
                                         </div>
                                     </div>
-                                    <div class="column  uk-width-1-3@s review-col">
+                                    <div class="column  uk-width-1-2@s uk-width-1-3@m  review-col">
                                         <div class="uk-card customer-card">
                                             <img class="customer-photo" src="images/p3.png" alt="p3">
                                             <h4 class="personal-card-title">Amanda Berkley</h4>
@@ -395,7 +418,7 @@
                                             <p class="date">12 mar 2019</p>
                                         </div>
                                     </div>
-                                        <div class="column  uk-width-1-3@s review-col">
+                                        <div class="column  uk-width-1-2@s uk-width-1-3@m  review-col">
                                             <div class="uk-card customer-card">
                                                 <img class="customer-photo" src="images/p1.png" alt="p1">
                                                 <h4 class="personal-card-title">Angela Mortensen</h4>
@@ -410,7 +433,7 @@
                             </li>
                             <li>
                                 <div class="uk-child-width-expand gallery-grid" uk-grid>
-                                    <div class="column  uk-width-1-3@s review-col">
+                                    <div class="column  uk-width-1-2@s uk-width-1-3@m  review-col">
                                         <div class="uk-card customer-card">
                                             <img class="customer-photo" src="images/p3.png" alt="p3">
                                             <h4 class="personal-card-title">Amanda Berkley</h4>
@@ -421,7 +444,7 @@
                                             <p class="date">12 mar 2019</p>
                                         </div>
                                     </div>
-                                    <div class="column  uk-width-1-3@s review-col">
+                                    <div class="column  uk-width-1-2@s uk-width-1-3@m  review-col">
                                         <div class="uk-card customer-card">
                                             <img class="customer-photo" src="images/p1.png" alt="p1">
                                             <h4 class="personal-card-title">Angela Mortensen</h4>
@@ -432,7 +455,7 @@
                                             <p class="date">01 may 2019</p>
                                         </div>
                                     </div>
-                                    <div class="column  uk-width-1-3@s review-col">
+                                    <div class="column  uk-width-1-2@s uk-width-1-3@m  review-col">
                                         <div class="uk-card customer-card">
                                             <img class="customer-photo" src="images/p2.png" alt="p2">
                                             <h4 class="personal-card-title">Dilan Mason</h4>
@@ -447,7 +470,7 @@
                             </li>
                             <li>
                                     <div class="uk-child-width-expand gallery-grid" uk-grid>
-                                        <div class="column  uk-width-1-3@s review-col">
+                                        <div class="column  uk-width-1-2@s uk-width-1-3@m  review-col">
                                             <div class="uk-card customer-card">
                                                 <img class="customer-photo" src="images/p2.png" alt="p2">
                                                 <h4 class="personal-card-title">Dilan Mason</h4>
@@ -458,7 +481,7 @@
                                                 <p class="date">20 apr 2019</p>
                                             </div>
                                         </div>
-                                        <div class="column  uk-width-1-3@s review-col">
+                                        <div class="column  uk-width-1-2@s uk-width-1-3@m  review-col">
                                             <div class="uk-card customer-card">
                                                 <img class="customer-photo" src="images/p3.png" alt="p3">
                                                 <h4 class="personal-card-title">Amanda Berkley</h4>
@@ -469,7 +492,7 @@
                                                 <p class="date">12 mar 2019</p>
                                             </div>
                                         </div>
-                                            <div class="column  uk-width-1-3@s review-col">
+                                            <div class="column  uk-width-1-2@s uk-width-1-3@m  review-col">
                                                 <div class="uk-card customer-card">
                                                     <img class="customer-photo" src="images/p1.png" alt="p1">
                                                     <h4 class="personal-card-title">Angela Mortensen</h4>
@@ -484,7 +507,7 @@
                             </li>
                             <li>
                                 <div class="uk-child-width-expand gallery-grid" uk-grid>
-                                    <div class="column  uk-width-1-3@s review-col">
+                                    <div class="column  uk-width-1-2@s uk-width-1-3@m  review-col">
                                         <div class="uk-card customer-card">
                                             <img class="customer-photo" src="images/p3.png" alt="p3">
                                             <h4 class="personal-card-title">Amanda Berkley</h4>
@@ -495,7 +518,7 @@
                                             <p class="date">12 mar 2019</p>
                                         </div>
                                     </div>
-                                    <div class="column  uk-width-1-3@s review-col">
+                                    <div class="column  uk-width-1-2@s uk-width-1-3@m  review-col">
                                         <div class="uk-card customer-card">
                                             <img class="customer-photo" src="images/p1.png" alt="p1">
                                             <h4 class="personal-card-title">Angela Mortensen</h4>
@@ -506,7 +529,7 @@
                                             <p class="date">01 may 2019</p>
                                         </div>
                                     </div>
-                                    <div class="column  uk-width-1-3@s review-col">
+                                    <div class="column  uk-width-1-2@s uk-width-1-3@m  review-col">
                                         <div class="uk-card customer-card">
                                             <img class="customer-photo" src="images/p2.png" alt="p2">
                                             <h4 class="personal-card-title">Dilan Mason</h4>
@@ -553,17 +576,17 @@
             </div>
         </section>
       </main>
-      <footer>
-        <div class="container big-container footer-container">
+      <footer class="footer">
+        <div class="container footer-container">
             <form class="subscribe">
                 <h2 class="f-title">Subscribe to our newsletter</h2>
                 <div class="uk-child-width-expand" uk-grid>
-                    <div class="uk-width-1-2@s f-col">
+                    <div class="uk-width-3-5@s f-col">
                         <label class="f-label">Your E-mail</label><br>
                         <input class="uk-input  f-input" type="text" placeholder="Example@gmail.com">
                     </div>
-                    <div class="uk-width-1-2@s f-col">
-                        <button class="uk-button uk-button-default uk-width-1-1 my-button f-button">Subscribe</button>
+                    <div class="uk-width-2-5@s f-col">
+                        <button class="uk-button uk-button-default  f-button my-button">Subscribe</button>
                     </div>
                 </div>
                 <div class="social">
@@ -574,10 +597,15 @@
             </form>
         </div>
       </footer>
+      <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+      
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
+    <script src="js/my-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+   
 </body>
 </html>

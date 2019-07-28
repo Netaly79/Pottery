@@ -1,14 +1,18 @@
-.footer-container{
+.footer{
     background-image: url("../../images/footer.png");
     padding: 70px 20px;
     background-position: center;
     background-size: cover;
     margin-bottom: 0;
 }
-.subscribe{
+.footer-container{
     margin: 0 auto;
     width:90%;
+    max-width: 623px;
     padding: 20px;
+}
+.f-col{
+    padding-left: 10px !important;
 }
 .f-title{
     font-family: Brandon Grotesque;
@@ -24,16 +28,21 @@
     color: var(--section-story-background);
 }
 .f-input{
-    padding: 25px;
+    padding: 22px;
     font-family: Brandon Grotesque;
     font-size: 18px;
     line-height: 26px;
-    color: #373F55;
+    color: black;
     background: var(--main-color);
     border-radius: 5px;
+    max-width: 368px;
+}
+.f-input::placeholder{
+    color:#373F55;
 }
 .f-button{
-    margin-top:22px !important;
+    margin-top:23px !important;
+    padding: 14px 60px !important;
 }
 .social{
     margin-top: 50px;

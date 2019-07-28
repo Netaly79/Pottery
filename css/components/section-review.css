@@ -1,5 +1,6 @@
 .section-review{
-    background-color: #F8F8F8;;
+    background-color: #F8F8F8;
+    margin-top:70px;
 }
 .uk-dotnav > .uk-active > * {
     background-color: var(--green-color);

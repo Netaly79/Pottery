@@ -1,9 +1,12 @@
-
+.header{
+    background-color: var(--back-grey);
+}
 .nav-container{
     max-width:1440px;
+    padding-left: 20px;
 }
 .uk-navbar-container:not(.uk-navbar-transparent){
-    background-color: var(--back-grey);
+    background-color: transparent;
 }
 .navbar{
     background-color:#343C4A;
@@ -113,7 +116,10 @@
 }
 .dropdown{
     display:block;
-    text-align: right;
+    text-align: left;
+}
+.uk-dropdown{
+    min-width: 100px;
 }
 .dropdown-toggle{
     padding: 6px;

@@ -30,7 +30,7 @@ figure{
 }
 @media (min-width: 640px) { 
     .big-container{
-        margin-bottom: 120px;
+        margin-bottom: 80px;
     }
     .small-container{
         margin-bottom: 120px;

@@ -34,7 +34,12 @@
 }
 @media (min-width: 640px) { 
     .slider-items{
-        min-height: 400px !important;
+        min-height: 370px !important;
+    }
+}
+@media (min-width: 740px) { 
+    .slider-items{
+        min-height: 350px !important;
     }
 }
 @media (min-width: 1440px) { 
