@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/uikit/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
     <title>Pottery</title>
   </head>
@@ -145,7 +146,13 @@
                 <p class="section-desc">Choose and watch the video below in order to find out more about 
                     the techniques you will learn at your lessons.
                 </p>
-                <figure>
+                <div class="slider">
+                        <div><img  class="stop-video" src="images/357d5d_67d0cce510744006898903ee5acdca60.png" alt="video"></div>
+                        <div><img  class="stop-video" src="images/357d5d_67d0cce510744006898903ee5acdca60.png" alt="video"></div>
+                        <div><img  class="stop-video" src="images/357d5d_67d0cce510744006898903ee5acdca60.png" alt="video"></div>
+                        <div><img  class="stop-video" src="images/357d5d_67d0cce510744006898903ee5acdca60.png" alt="video"></div>
+                </div>
+                <!-- <figure>
                     <img  class="stop-video" src="images/357d5d_67d0cce510744006898903ee5acdca60.png" alt="video">
                     <img class="player-panel" src="images/player-progress-bar.png" alt="player">
                 </figure>
@@ -171,7 +178,7 @@
                             <img class="preview-img" src="images/pottery-asian-market_1147-355.png" alt="market">
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
          <section class="section section-our-story">
@@ -656,14 +663,37 @@
             </form>
         </div>
       </footer>
-      <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-      
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+     <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
-   
+    <script> 
+$(document).ready(function(){
+  $('.slider').slick({
+    dots: true
+  });
+  $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+				
+});
+    </script>
 </body>
 </html>
