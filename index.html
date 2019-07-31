@@ -352,7 +352,7 @@
                 <h2 class="section-title">Reviews</h2>
                 <p class="section-desc">Our clients always stay very happy, just read their reviews below.
                 </p>
-                <div uk-slideshow="animation: push">
+                <div uk-slideshow="animation:scale">
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
                         <ul class="uk-slideshow-items slider-items">
                             <li>
@@ -658,23 +658,23 @@
     <script src="js/uikit-icons.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script> 
-$(document).ready(function(){
- 
-  $('.slider-for').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.slider-nav'
-});
-$('.slider-nav').slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  asNavFor: '.slider-for',
-  focusOnSelect: true
-});
-				
-});
+        $(document).ready(function(){
+        
+        $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        focusOnSelect: true
+        });
+                        
+        });
     </script>
 </body>
 </html>
