@@ -1,7 +1,6 @@
 .section-techniques{
     margin-top:40px;
     padding:20px;
-    margin-bottom: 40px;
 }
 .tech-container{
     margin-bottom: 40px;
@@ -9,6 +8,9 @@
 .stop-video{
     -o-object-fit: cover;
        object-fit: cover;
+       max-width: 922px;
+       max-height: 424px;
+       width:100%;
 }
 .uk-grid{
     margin-left: 0px;
@@ -18,12 +20,20 @@
     -o-object-fit: cover;
     object-fit: cover;
 }
+.preview-box{
+    margin:0 2.5%;
+    width: 25%;
+}
 .preview-img{
     width:100%;
     max-width: 215px;
     height:25px;
     -o-object-fit: cover;
        object-fit: cover;
+}
+.slick-list .draggable{
+    padding:0;
+    width:100%;
 }
 @media (min-width:480px){
     .preview-img{

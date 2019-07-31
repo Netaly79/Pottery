@@ -1,5 +1,6 @@
 .section-our-story{
     background-color: var(--section-story-background);
+    padding-top:30px;
 }
 .story-img {
     max-height: 105px;

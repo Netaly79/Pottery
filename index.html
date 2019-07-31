@@ -146,39 +146,24 @@
                 <p class="section-desc">Choose and watch the video below in order to find out more about 
                     the techniques you will learn at your lessons.
                 </p>
-                <div class="slider">
+                <div class="slider-for">
                         <div><img  class="stop-video" src="images/357d5d_67d0cce510744006898903ee5acdca60.png" alt="video"></div>
-                        <div><img  class="stop-video" src="images/357d5d_67d0cce510744006898903ee5acdca60.png" alt="video"></div>
-                        <div><img  class="stop-video" src="images/357d5d_67d0cce510744006898903ee5acdca60.png" alt="video"></div>
-                        <div><img  class="stop-video" src="images/357d5d_67d0cce510744006898903ee5acdca60.png" alt="video"></div>
+                        <div><img  class="stop-video" src="images/old-potter-creating-new-ceramic-pot_42890-94.png" alt="video"></div>
+                        <div><img  class="stop-video" src="images/Group3.png" alt="video"></div>
+                        <div><img  class="stop-video" src="images/pottery-asian-market_1147-355.png" alt="video"></div>
                 </div>
-                <!-- <figure>
-                    <img  class="stop-video" src="images/357d5d_67d0cce510744006898903ee5acdca60.png" alt="video">
+                <figure>
+                   
                     <img class="player-panel" src="images/player-progress-bar.png" alt="player">
                 </figure>
                 <p class="section-sub-desc">Wheelthrowing</p>
-                <div class="uk-child-width-expand tech-grid" uk-grid>
-                    <div class="column uk-width-1-4 uk-column-1-4@m">
-                        <div class="uk-card">
-                            <img  class="preview-img" src="images/357d5d_67d0cce510744006898903ee5acdca60.png" alt="man">
-                        </div>
-                    </div>
-                    <div class=" column uk-width-1-4 uk-column-1-4@m">
-                        <div class="uk-card">
-                            <img class="preview-img" src="images/old-potter-creating-new-ceramic-pot_42890-94.png" alt="ceramic">
-                        </div>
-                    </div>
-                    <div class=" column uk-width-1-4 uk-column-1-4@m">
-                        <div class="uk-card">
-                            <img class="preview-img" src="images/Group3.png" alt="hands">
-                        </div>
-                    </div>
-                    <div class="column uk-width-1-4 uk-column-1-4@m">
-                        <div class="uk-card">
-                            <img class="preview-img" src="images/pottery-asian-market_1147-355.png" alt="market">
-                        </div>
-                    </div>
-                </div> -->
+                <div class="slider-nav">
+                    
+                    <div class="preview-box"><img  class="preview-img" src="images/357d5d_67d0cce510744006898903ee5acdca60.png" alt="video"></div>
+                    <div class="preview-box"><img  class="preview-img" src="images/old-potter-creating-new-ceramic-pot_42890-94.png" alt="video"></div>
+                    <div class="preview-box "><img  class="preview-img" src="images/Group3.png" alt="video"></div>
+                    <div class="preview-box "><img  class="preview-img" src="images/pottery-asian-market_1147-355.png" alt="video"></div>
+                </div> 
             </div>
         </section>
          <section class="section section-our-story">
@@ -674,9 +659,7 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <script> 
 $(document).ready(function(){
-  $('.slider').slick({
-    dots: true
-  });
+ 
   $('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -685,11 +668,9 @@ $(document).ready(function(){
   asNavFor: '.slider-nav'
 });
 $('.slider-nav').slick({
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   asNavFor: '.slider-for',
-  dots: true,
-  centerMode: true,
   focusOnSelect: true
 });
 				
