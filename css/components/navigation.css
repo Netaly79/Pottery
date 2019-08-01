@@ -102,7 +102,9 @@
     line-height: 29px;
     color: #FFFFFF;
 }
-.nav-item{
+.nav-item,
+.uk-offcanvas-bar > ul > li
+{
     list-style: none;
 }
 .nav-link:hover, .nav-item:hover,
@@ -124,9 +126,11 @@
 .dropdown-toggle{
     padding: 6px;
 }
-.uk-dropdown-nav > li > a:hover
+.uk-dropdown-nav > li > a:hover,
+.uk-offcanvas-bar > ul > li > a:hover
 {
     color:var(--green-color);
+    text-decoration: none;
 }
 @media (min-width: 640px) { 
     .dropdown{

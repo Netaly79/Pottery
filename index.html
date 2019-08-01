@@ -37,7 +37,27 @@
                             <a class="nav-link" href="#">Contacts</a>
                         </li>
                     </ul>
-                    <div class="dropdown uk-inline">
+                    <div class="dropdown">
+                        <button class="uk-button uk-button-default dropdown-menu-button" type="button" uk-toggle="target: #offcanvas-overlay">Menu</button>
+
+                        <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+                            <div class="uk-offcanvas-bar">
+                        
+                                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                                <ul>
+                                        <li><a class="dropdown-item" href="#">Techniques</a></li>
+                                        <li><a class="dropdown-item" href="#">About us</a></li>
+                                        <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                        <li><a class="dropdown-item" href="#">Plans</a></li>
+                                        <li><a class="dropdown-item" href="#">Reviews</a></li>
+                                        <li><a class="dropdown-item" href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- <div class="dropdown uk-inline">
                             <button class="uk-button uk-button-default dropdown-menu-button" type="button">
                                 Menu
                             </button>
@@ -51,7 +71,7 @@
                                     <li><a class="dropdown-item" href="#">Contacts</a></li>
                                 </ul>
                             </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="column uk-width-1-4 uk-width-1-6@s uk-width-1-5@l">
                     <div class="row nav-rigth-col-row uk-grid  uk-grid-small">
@@ -148,9 +168,9 @@
                 </p>
                 <div class="slider-for">
                         <div><img  class="stop-video" src="images/357d5d_67d0cce510744006898903ee5acdca60.png" alt="video"></div>
-                        <div><img  class="stop-video" src="images/old-potter-creating-new-ceramic-pot_42890-94.png" alt="video"></div>
-                        <div><img  class="stop-video" src="images/Group3.png" alt="video"></div>
-                        <div><img  class="stop-video" src="images/pottery-asian-market_1147-355.png" alt="video"></div>
+                        <div><img  class="stop-video" src="images/2.png" alt="video"></div>
+                        <div><img  class="stop-video" src="images/3.png" alt="video"></div>
+                        <div><img  class="stop-video" src="images/4.png" alt="video"></div>
                 </div>
                 <figure>
                    
@@ -172,12 +192,51 @@
                  <p class="section-desc story-desc">Our company was created in the 2015 year and since that time, 
                      we have been teaching people to work with clay. We work out new techniques and made a lot of people happy.
                 </p>
-                <img class="story-img" src="images/years.png" alt="years-line">
-                <div class="uk-card singolo-card">
-                    <p class="card-desc">In 2017 our company became bigger, we had hired 3 new teachers. 
-                        We also bought new equipment and added one more class. The number of students increased by 10%. 
-                        We started learning our students with new techniques and organized evening classes.
-                    </p>
+                <div class="slider story-slider">
+                    <div>
+                        <img class="story-img" src="images/years15.png" alt="years-line">
+                        <div class="uk-card singolo-card">
+                            <p class="card-desc">In 2015, we opened our first classes.
+                                    In the first year, 124 students were trained.
+                                    Two children's groups were organized.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="story-img" src="images/years16.png" alt="years-line">
+                        <div class="uk-card singolo-card">
+                            <p class="card-desc">In 2016, two more teachers joined us.
+                                    The training was attended by 157 students.
+                                    Three children's groups and six adult groups were organized.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="story-img" src="images/years17.png" alt="years-line">
+                        <div class="uk-card singolo-card">
+                            <p class="card-desc">In 2017 our company became bigger, we had hired 3 new teachers.
+                                We also bought new equipment and added one more class. The number of students increased by 10%. 
+                                We started learning our students with new techniques and organized evening classes.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="story-img" src="images/years18.png" alt="years-line">
+                        <div class="uk-card singolo-card">
+                            <p class="card-desc">In 2018, our company became even larger, we hired 4 new teachers.
+                                    We also bought new equipment and began to work with new types of clay. 
+                                    The number of students increased by 15%.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="story-img" src="images/years19.png" alt="years-line">
+                        <div class="uk-card singolo-card">
+                            <p class="card-desc">In 2019, our company plans to host a thousandth student.
+                                    Now we have more than 20 teachers. Trained 10 daytime and 14 evening groups. The number of students increased by 23%.
+                            </p>
+                        </div>
+                    </div>
                 </div>
              </div>
          </section> 
@@ -648,12 +707,9 @@
             </form>
         </div>
       </footer>
-      <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-      <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-      <script type="text/javascript" src="slick/slick.min.js"></script>
-     <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
@@ -673,8 +729,17 @@
         asNavFor: '.slider-for',
         focusOnSelect: true
         });
-                        
+     
+  $('.slider').slick({
+        arrows: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        prevArrow: "<img src='images/left.svg' class='prev' alt='1'>",
+        nextArrow: "<img src='images/right.svg' class='next' alt='2'>",
         });
+        });              
+     
     </script>
 </body>
 </html>
