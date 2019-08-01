@@ -7,6 +7,7 @@
     margin-bottom: 44px;
     -o-object-fit: cover;
     object-fit: cover;
+    width:100%;
 }
 .story-slider{
     position: relative;
