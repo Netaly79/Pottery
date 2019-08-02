@@ -15,10 +15,14 @@
 .uk-grid{
     margin-left: 0px;
 }
+.player{
+    width: 100%;
+}
 .player-panel{
     padding: 20px;
     -o-object-fit: cover;
     object-fit: cover;
+    width: 100%;
 }
 .preview-box{
     margin:0 2.5%;
