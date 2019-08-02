@@ -88,6 +88,7 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 0; 
+    display: none;
 }
 .nav{
     -webkit-box-pack: start;
@@ -132,6 +133,8 @@
     color:var(--green-color);
     text-decoration: none;
 }
+
+
 @media (min-width: 640px) { 
     .dropdown{
         display: none;
@@ -146,7 +149,7 @@
         margin-left: 0;
     }
     .nav-link{
-        font-size: 18px;
+        font-size: 16px;
         padding: 0.5rem 5px;
     }
     .nav-item{
@@ -160,7 +163,28 @@
     .logo{
         font-size: 22px;
         padding: 0;
-    }   
+    }  
+     .col-search{
+        display:none;
+    } 
+
+    .uk-search-input{
+        color:white;
+    }
+    .col-search{
+        display:flex;
+    }
+    .uk-navbar-dropdown{
+        width: 150px;
+        background-color: transparent;
+        font-size: 16px;
+        padding: 0px;
+        top:60px !important;
+        right:0px !important;
+    }
+    .uk-navbar-toggle{
+        padding: 0;
+    }
 }
 @media (min-width: 960px) { 
     .user-name{
@@ -171,6 +195,16 @@
     .nav-link{
         font-size: 20px;
         padding: 0.5rem;
+    }
+    
+    .uk-navbar-dropdown{
+        width: 250px;
+        background-color: transparent;
+        padding: 5px;
+        right:0px !important;
+    }
+    .uk-navbar-toggle{
+        padding: 0;
     }
 }
 @media (min-width: 1200px) { 
@@ -200,6 +234,11 @@
     }
     .nav{
         padding-left: 30px;
+    }
+    .uk-navbar-dropdown{
+        width: 200px;
+        top:60px !important;
+        right:0px !important;
     }
 }
 @media (min-width: 1400px) { 
